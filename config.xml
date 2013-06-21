@@ -18,5 +18,6 @@ Jens Nielsen
 
 <preference name="AllowInlineMediaPlayback" value="false" />
 <preference name="orientation" value="portrait" />
+<access origin="*sik.dk" browserOnly="true"/>
 
 </widget>
