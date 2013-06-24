@@ -317,6 +317,7 @@ nav section .navBtnWrapper .btnNav span {
   top: 0px;
   left: -70%;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   background-color: #55761d;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6c9525), color-stop(100%, #55761d));
   background-image: -webkit-linear-gradient(#6c9525, #55761d);
@@ -324,19 +325,19 @@ nav section .navBtnWrapper .btnNav span {
   background-image: -o-linear-gradient(#6c9525, #55761d);
   background-image: linear-gradient(#6c9525, #55761d);
 }
-/* line 167, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 #menu.active {
   left: 0%;
 }
-/* line 172, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 #menu ul {
   position: relative;
 }
-/* line 175, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 #menu ul li {
   border-bottom: 1px solid white;
 }
-/* line 178, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 #menu ul li a {
   display: block;
   padding: 10px 10px 8px 10px;
@@ -347,30 +348,31 @@ nav section .navBtnWrapper .btnNav span {
 }
 
 /** Info box **/
-/* line 192, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 #info {
   position: fixed;
   z-index: 15;
   width: 90%;
-  height: 300px;
-  top: -400px;
+  height: 85%;
+  top: -100%;
   right: 0%;
   margin-right: 0%;
   background-color: #55761d;
   color: white;
   text-align: center;
   overflow: scroll;
-  padding: 40px 5% 20px 5%;
+  -webkit-overflow-scrolling: touch;
+  padding: 10% 5% 5% 5%;
   -webkit-box-shadow: black 0px 0px 50px;
   -moz-box-shadow: black 0px 0px 50px;
   box-shadow: black 0px 0px 50px;
   /*@include border-radius(10px);*/
 }
-/* line 209, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 #info.active {
   top: 40px;
 }
-/* line 214, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 #info .bar {
   position: fixed;
   top: 380px;
@@ -379,16 +381,16 @@ nav section .navBtnWrapper .btnNav span {
   width: 100%;
   background-color: #55761d;
 }
-/* line 223, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 #info h1 {
   font-size: 24px;
   margin: 0 0 0px 0;
 }
-/* line 228, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 #info p {
   margin: 15px 0 0 0;
 }
-/* line 232, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 #info a {
   display: inline-block;
   width: 50%;
@@ -408,7 +410,7 @@ nav section .navBtnWrapper .btnNav span {
 }
 
 /** video items **/
-/* line 249, ../sass/screen.scss */
+/* line 251, ../sass/screen.scss */
 .contentWrapper {
   position: relative;
   width: 100%;
@@ -422,23 +424,23 @@ nav section .navBtnWrapper .btnNav span {
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px;
 }
-/* line 263, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .contentWrapper.active {
   left: 70%;
 }
 
-/* line 269, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 section.items {
   position: relative;
   z-index: 10;
   max-width: 1024px;
   margin: 0 auto 0 auto;
 }
-/* line 275, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 section.items.first {
   margin-top: 80px;
 }
-/* line 279, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 section.items header {
   color: #55761d;
   margin: 0 0 25px 0;
@@ -448,13 +450,13 @@ section.items header {
   font-family: pt_sansbold;
   text-shadow: white 0px 1px 0;
 }
-/* line 292, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 section.items header h1 {
   display: inline-block;
   padding: 0 15px 0 15px;
   background-image: url("../img/bg.jpg");
 }
-/* line 298, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 section.items header hr {
   margin: -18px 0 0 0;
   color: #55761d;
@@ -462,7 +464,7 @@ section.items header hr {
   -moz-box-shadow: white 0px 1px 0;
   box-shadow: white 0px 1px 0;
 }
-/* line 305, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 section.items article {
   position: relative;
   width: 90%;
@@ -482,12 +484,12 @@ section.items article {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
 }
-/* line 314, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 section.items article .itemHeader {
   position: relative;
   padding: 0 0 10px 0;
 }
-/* line 318, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 section.items article .itemHeader h2 {
   color: #6c9525;
   text-transform: uppercase;
@@ -498,13 +500,19 @@ section.items article .itemHeader h2 {
   background-size: 41px auto;
   text-shadow: white 0px 1px 0;
 }
-/* line 329, ../sass/screen.scss */
-section.items article .itemHeader h2.twoItems {
+/* line 331, ../sass/screen.scss */
+section.items article .itemHeader h2.vasktor {
   font-size: 14px;
   padding: 0 0 0 97px;
   background-image: url(../img/iconer.svg), url(../img/iconer.svg);
 }
-/* line 340, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
+section.items article .itemHeader h2.komOvnEm {
+  font-size: 16px;
+  padding: 0 0 0 142px;
+  background-image: url(../img/iconer.svg), url(../img/iconer.svg), url(../img/iconer.svg);
+}
+/* line 350, ../sass/screen.scss */
 section.items article .itemHeader h2 p {
   display: block;
   color: #333333;
@@ -512,11 +520,11 @@ section.items article .itemHeader h2 p {
   text-transform: lowercase;
   font-family: pt_sansregular;
 }
-/* line 349, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 section.items article .itemHeader p {
   color: #55761d;
 }
-/* line 354, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 section.items article a {
   position: relative;
   display: block;
@@ -532,7 +540,7 @@ section.items article a {
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
 }
-/* line 363, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 section.items article a span {
   display: block;
   position: absolute;
@@ -547,7 +555,7 @@ section.items article a span {
   background-position: center center;
   background-size: 100px 100px;
 }
-/* line 380, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 section.items article a img {
   display: block;
   width: 100%;
@@ -555,18 +563,18 @@ section.items article a img {
 }
 
 /** video items - Layout 2 **/
-/* line 391, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 .layout2 section.items {
   position: relative;
   z-index: 10;
   max-width: 1024px;
   margin: 0 auto 0 auto;
 }
-/* line 397, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 .layout2 section.items.first {
   margin-top: 80px;
 }
-/* line 401, ../sass/screen.scss */
+/* line 411, ../sass/screen.scss */
 .layout2 section.items header {
   color: #55761d;
   margin: 0 0 25px 0;
@@ -576,13 +584,13 @@ section.items article a img {
   font-family: pt_sansbold;
   text-shadow: white 0px 1px 0;
 }
-/* line 414, ../sass/screen.scss */
+/* line 424, ../sass/screen.scss */
 .layout2 section.items header h1 {
   display: inline-block;
   padding: 0 15px 0 15px;
   background-image: url("../img/bg.jpg");
 }
-/* line 420, ../sass/screen.scss */
+/* line 430, ../sass/screen.scss */
 .layout2 section.items header hr {
   margin: -18px 0 0 0;
   color: #55761d;
@@ -590,7 +598,7 @@ section.items article a img {
   -moz-box-shadow: white 0px 1px 0;
   box-shadow: white 0px 1px 0;
 }
-/* line 427, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 .layout2 section.items article {
   position: relative;
   width: 90%;
@@ -610,18 +618,18 @@ section.items article a img {
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
 }
-/* line 436, ../sass/screen.scss */
+/* line 446, ../sass/screen.scss */
 .layout2 section.items article .itemHeader {
   position: relative;
   padding: 0 0 0 0;
 }
-/* line 440, ../sass/screen.scss */
+/* line 450, ../sass/screen.scss */
 .layout2 section.items article .itemHeader p {
   font-size: 13px;
   margin: 0 0 15px 0;
   padding: 0 120px 0 0;
 }
-/* line 446, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 .layout2 section.items article .itemHeader h2 {
   color: #6c9525;
   text-transform: uppercase;
@@ -635,7 +643,7 @@ section.items article a img {
   background-size: 26px 26px;
   text-shadow: white 0px 1px 0;
 }
-/* line 461, ../sass/screen.scss */
+/* line 471, ../sass/screen.scss */
 .layout2 section.items article .itemHeader h2 p {
   display: block;
   color: #333333;
@@ -643,7 +651,7 @@ section.items article a img {
   text-transform: lowercase;
   font-family: pt_sansregular;
 }
-/* line 471, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 .layout2 section.items article a {
   position: absolute;
   display: block;
@@ -662,7 +670,7 @@ section.items article a img {
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
 }
-/* line 483, ../sass/screen.scss */
+/* line 493, ../sass/screen.scss */
 .layout2 section.items article a span {
   display: block;
   position: absolute;
@@ -677,7 +685,7 @@ section.items article a img {
   background-position: center center;
   background-size: 50px 50px;
 }
-/* line 500, ../sass/screen.scss */
+/* line 510, ../sass/screen.scss */
 .layout2 section.items article a img {
   display: block;
   width: 100%;
