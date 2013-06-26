@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+    if (navigator.userAgent.toLowerCase().indexOf('android') != -1) {
+        $('html').addClass('android');
+    }
+
     $(".btnInfo").click(function() {
         $('.btnInfo, #info').toggleClass("active");
     });

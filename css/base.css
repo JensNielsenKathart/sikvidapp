@@ -64,30 +64,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /** Usefull **/
-/* line 21, ../sass/base.scss */
+/* line 22, ../sass/base.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 22, ../sass/base.scss */
+/* line 23, ../sass/base.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 23, ../sass/base.scss */
+/* line 24, ../sass/base.scss */
 .clearfix {
   zoom: 1;
 }
 
 /** Functions **/
 /**basics**/
-/* line 35, ../sass/base.scss */
+/* line 36, ../sass/base.scss */
 h1, h2, h3 {
   font-family: pt_sansbold;
 }
 
-/* line 39, ../sass/base.scss */
+/* line 40, ../sass/base.scss */
 .animateEaseInOut {
   -webkit-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -101,7 +101,7 @@ h1, h2, h3 {
   transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 }
 
-/* line 53, ../sass/base.scss */
+/* line 54, ../sass/base.scss */
 .gpu {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -110,14 +110,14 @@ h1, h2, h3 {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 61, ../sass/base.scss */
+/* line 62, ../sass/base.scss */
 .iconSprite {
   background-image: url("../img/iconer.svg");
   background-repeat: no-repeat;
   background-position: 0px 0px;
 }
 
-/* line 69, ../sass/base.scss */
+/* line 70, ../sass/base.scss */
 .dim {
   animation: move 1s;
   -moz-animation: dim 1s;
@@ -125,27 +125,27 @@ h1, h2, h3 {
 }
 
 @-webkit-keyframes dim {
-  /* line 76, ../sass/base.scss */
+  /* line 77, ../sass/base.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 79, ../sass/base.scss */
+  /* line 80, ../sass/base.scss */
   25% {
     opacity: 0.5;
   }
 
-  /* line 82, ../sass/base.scss */
+  /* line 83, ../sass/base.scss */
   50% {
     opacity: 1;
   }
 
-  /* line 85, ../sass/base.scss */
+  /* line 86, ../sass/base.scss */
   75% {
     opacity: 0.5;
   }
 
-  /* line 88, ../sass/base.scss */
+  /* line 89, ../sass/base.scss */
   100% {
     opacity: 1;
   }
